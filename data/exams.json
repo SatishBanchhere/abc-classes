@@ -1,0 +1,1602 @@
+{
+  "Chemistry": [
+    {
+      "name": "Alcohol, Phenol and Ethers",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Introduction and Characteristics"
+        },
+        {
+          "name": "Methods of preparation"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Some important properties"
+        },
+        {
+          "name": "Uses of Alcohol, Phenol and Ethers"
+        }
+      ]
+    },
+    {
+      "name": "Aldehydes and Ketones, Carboxylic acids and Their derivatives",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Introduction of Aldehydes and Ketones"
+        },
+        {
+          "name": "Introduction of Carboxylic Acids"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Preparation of Aldehydes and Ketones"
+        },
+        {
+          "name": "Preparation of Carboxylic Acids"
+        },
+        {
+          "name": "Properties of Aldehydes and Ketones"
+        },
+        {
+          "name": "Properties of Carboxylic Acids"
+        },
+        {
+          "name": "Uses of Carboxylic Acids"
+        }
+      ]
+    },
+    {
+      "name": "Atomic Structure",
+      "subtopics": [
+        {
+          "name": "Anode and Cathode rays, Neutron and Nuclear structure"
+        },
+        {
+          "name": "Atomic number, Mass number, Atomic species"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Heisenberg uncertainty principle and Schrodinger wave equation"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Quantum number and their significance"
+        },
+        {
+          "name": "Thomson and Rutherford atomic models and Quantum theory"
+        }
+      ]
+    },
+    {
+      "name": "Biomolecules",
+      "subtopics": [
+        {
+          "name": "Carbohydrates with classification"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Fats and Lipids"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Proteins, Amino Acids and Enzymes"
+        },
+        {
+          "name": "Vitamin, Nucleic acid and Hormones"
+        }
+      ]
+    },
+    {
+      "name": "Chemical Bonding and Molecular Structure",
+      "subtopics": [
+        {
+          "name": "Co-ordinate Covalent bond (Characteristics)"
+        },
+        {
+          "name": "Covalent bond (Characteristics and Formation)"
+        },
+        {
+          "name": "Different types of bonding and Forces in solid"
+        },
+        {
+          "name": "Dipole moment"
+        },
+        {
+          "name": "Electrovalent bond (Characteristics and Formation)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Fajan's rule"
+        },
+        {
+          "name": "Hybridisation Concept (s, p and d orbitals)"
+        },
+        {
+          "name": "Hydrogen bonding and its types"
+        },
+        {
+          "name": "Molecular orbital theory (MOT) and its features"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Resonance"
+        },
+        {
+          "name": "Valence Shell Electron Pair Repulsion Theory (VSEPR)"
+        }
+      ]
+    },
+    {
+      "name": "Chemical Equilibrium",
+      "subtopics": [
+        {
+          "name": "Degree of dissociation and Vapour density, Activation energy and Standard free energy"
+        },
+        {
+          "name": "Equilibrium state"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Kp & Kc Relationship and significance"
+        },
+        {
+          "name": "Law of equilibrium and Equilibrium constant (Kp & Kc)"
+        },
+        {
+          "name": "Law of mass action"
+        },
+        {
+          "name": "Le-Chaterlier principle with application"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Reversible and Irreversible reaction with characteristics"
+        }
+      ]
+    },
+    {
+      "name": "Chemical Kinetics",
+      "subtopics": [
+        {
+          "name": "Activation energy, Collision theory and Arrhenius theory"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Rate law and Rate constant"
+        },
+        {
+          "name": "Rate of a chemical reaction and affecting factors"
+        }
+      ]
+    },
+    {
+      "name": "Chemical Thermodynamics",
+      "subtopics": [
+        {
+          "name": "Bond energy or enthalpies"
+        },
+        {
+          "name": "Enthalpy of reaction"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "First law of thermodynamics and laws of thermochemistry"
+        },
+        {
+          "name": "Fundamental of thermodynamics"
+        },
+        {
+          "name": "Gibb's free energy"
+        },
+        {
+          "name": "IInd & IIIrd law of thermodynamics and Entropy"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Classification of Elements and Periodicity in Properties",
+      "subtopics": [
+        {
+          "name": "Atomic and Ionic radii"
+        },
+        {
+          "name": "Electron affinity and affecting factor"
+        },
+        {
+          "name": "Electronegativity and affecting factor"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Ionisation potential"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Periodic table"
+        },
+        {
+          "name": "Valence and oxidation state"
+        }
+      ]
+    },
+    {
+      "name": "Co-ordination Chemistry",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "IUPAC Nomenclature, Oxidation state"
+        },
+        {
+          "name": "Introduction"
+        },
+        {
+          "name": "Isomerism and Magnetic properties"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Electrochemistry",
+      "subtopics": [
+        {
+          "name": "Cell constant and Electrochemical or Galvanic cells"
+        },
+        {
+          "name": "Conductor and conductance (Metallic and Electrolytic)"
+        },
+        {
+          "name": "Electrode potential, ECell, Nernst equation and ECS"
+        },
+        {
+          "name": "Electrolytes and Electrolysis with application"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Faradays first and second law of electrolysis"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Hydrocarbon",
+      "subtopics": [
+        {
+          "name": "Alkanes"
+        },
+        {
+          "name": "Alkenes"
+        },
+        {
+          "name": "Alkynes"
+        },
+        {
+          "name": "Aromatic Hydrocarbon"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Ionic Equilibrium",
+      "subtopics": [
+        {
+          "name": "Acids and Bases (Arrhenius and Bronsted-Loery concept)"
+        },
+        {
+          "name": "Common ion effect, Isohydric soln, Solubility and Ionic product of water and salt hydrolysis"
+        },
+        {
+          "name": "Concentration of Hydrogen ion -pH scale and Buffer solutions"
+        },
+        {
+          "name": "Electrolytes, Arrhenius theory and Ostwald's dilution law with application"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Organic Compounds Containing Halogen",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Introduction and Characteristics"
+        },
+        {
+          "name": "Methods of preparation"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Some important properties"
+        },
+        {
+          "name": "Uses of Halogen Containing Compounds"
+        }
+      ]
+    },
+    {
+      "name": "Organic Compounds Containing Nitrogen",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Introduction and Characteristics"
+        },
+        {
+          "name": "Methods of preparation"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Some important properties"
+        },
+        {
+          "name": "Tests for Nitrogen Containing Compounds"
+        }
+      ]
+    },
+    {
+      "name": "Purification and Characterisation of Organic Compounds",
+      "subtopics": [
+        {
+          "name": "Classification and Nomenclature of Organic compounds"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Purification, Qualitative and Quantitative analysis of Organic compounds"
+        }
+      ]
+    },
+    {
+      "name": "Redox Reactions",
+      "subtopics": [
+        {
+          "name": "Electronic concepts of oxidation, reduction"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Oxidation number or Oxidation state"
+        },
+        {
+          "name": "Oxidizing and Reducing agent"
+        },
+        {
+          "name": "Redox reaction and balancing of redox reaction"
+        }
+      ]
+    },
+    {
+      "name": "Solutions",
+      "subtopics": [
+        {
+          "name": "Abnormal molecular mass, Van't Hoff factor"
+        },
+        {
+          "name": "Azeotropic mixture"
+        },
+        {
+          "name": "Colligative properties"
+        },
+        {
+          "name": "Colligative properties of electrolyte and molecular masses"
+        },
+        {
+          "name": "Depression of freezing point"
+        },
+        {
+          "name": "Elevation of boiling point"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Expression of concentration of solutions"
+        },
+        {
+          "name": "Ideal and Non-ideal solution"
+        },
+        {
+          "name": "Lowering of vapour pressure"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Osmosis and Osmotic pressure"
+        },
+        {
+          "name": "Solubility, Solid solutions"
+        }
+      ]
+    },
+    {
+      "name": "Some Basic Concepts in Chemistry",
+      "subtopics": [
+        {
+          "name": "Atomic and Molecular masses"
+        },
+        {
+          "name": "Chemical equation and stoichiometry"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Laws of chemical combination"
+        },
+        {
+          "name": "Matter and its nature, Quantities of measurement, Significant figures"
+        },
+        {
+          "name": "Mole concept"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Percentage composition, Empirical and molecular formula"
+        }
+      ]
+    },
+    {
+      "name": "Some Basic Principles of Organic Chemistry",
+      "subtopics": [
+        {
+          "name": "Bonding and hybridisation (s and p) in organic compounds"
+        },
+        {
+          "name": "Constitutional isomerism and stereo isomerism"
+        },
+        {
+          "name": "Dipole moment, resonance effect and reaction intermediates"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Types of Organic reactions and their mechanism"
+        }
+      ]
+    },
+    {
+      "name": "d and f Block Elements",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Introduction and Characteristics"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Transition elements"
+        }
+      ]
+    },
+    {
+      "name": "p Block Elements",
+      "subtopics": [
+        {
+          "name": "Boron family (Group-13)"
+        },
+        {
+          "name": "Carbon family (Group-14)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Halogen family (Group-17)"
+        },
+        {
+          "name": "Nitrogen family (Group-15)"
+        },
+        {
+          "name": "Noble gases (Group-18)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Oxygen family (Group-16)"
+        }
+      ]
+    }
+  ],
+  "Mathematics": [
+    {
+      "name": "Binomial Theorem and its application",
+      "subtopics": [
+        {
+          "name": "Binomial theorem"
+        },
+        {
+          "name": "Binomial theorem for any index"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "General term, Coefficient of any power of x"
+        },
+        {
+          "name": "Multinomial theorem, Terms"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Properties of binomial coefficients"
+        }
+      ]
+    },
+    {
+      "name": "Circle and System of Circles",
+      "subtopics": []
+    },
+    {
+      "name": "Complex Numbers",
+      "subtopics": [
+        {
+          "name": "Conjugate, Modulus and Argument"
+        },
+        {
+          "name": "De Moivre's theorem and Roots"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Geometry of complex numbers"
+        },
+        {
+          "name": "Integral power of iota (i), Operations and Equality"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Square root, Representation and Logarithm"
+        }
+      ]
+    },
+    {
+      "name": "Conic Sections",
+      "subtopics": []
+    },
+    {
+      "name": "Definite Integral and Area Under Curves",
+      "subtopics": [
+        {
+          "name": "Area bounded by region"
+        },
+        {
+          "name": "Definite integral Fundamental and by substitution"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Properties of definite integration"
+        },
+        {
+          "name": "Summation of series, Gamma function, Leibnitz's rule"
+        }
+      ]
+    },
+    {
+      "name": "Differential Equations",
+      "subtopics": []
+    },
+    {
+      "name": "Indefinite Integral",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Fundamental Indefinite Integral"
+        },
+        {
+          "name": "Indefinite Integration by substitution"
+        },
+        {
+          "name": "Integration by parts, Integral of the different form"
+        },
+        {
+          "name": "Integration by using partial fractions, Evaluation of various forms"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Inverse Trigonometric Functions",
+      "subtopics": []
+    },
+    {
+      "name": "Limits, Continuity and Differentiability, Derivative",
+      "subtopics": [
+        {
+          "name": "Application in mechanics and rate measurer (APPLICATION)"
+        },
+        {
+          "name": "Continuity"
+        },
+        {
+          "name": "Derivative at a point and Standard differentiation (Derivative)"
+        },
+        {
+          "name": "Differentiability (Derivative)"
+        },
+        {
+          "name": "Differentiation by substitution, Higher order derivatives (Derivative)"
+        },
+        {
+          "name": "Differentiation of implicit, Parametric, Composite, Logarithmic, infinite (Derivative)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Increasing and Decreasing function (APPLICATION)"
+        },
+        {
+          "name": "Limits"
+        },
+        {
+          "name": "Maxima and Minima (APPLICATION)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Partial differentiation (Derivative)"
+        },
+        {
+          "name": "Rolle's theorem, Lagrange's mean value theorem (APPLICATION)"
+        },
+        {
+          "name": "Tangent and Normal (APPLICATION)"
+        }
+      ]
+    },
+    {
+      "name": "Linear Inequalities",
+      "subtopics": []
+    },
+    {
+      "name": "Mathematical Induction",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Mathematical induction"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Reasoning",
+      "subtopics": []
+    },
+    {
+      "name": "Matrices and Determinants",
+      "subtopics": [
+        {
+          "name": "Expansion, Solution of eqn. in the form of determinants and properties"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Linear equations, special determinants, differentiation and integration"
+        },
+        {
+          "name": "Minors and Co-factors, Product of determinants"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Relation between matrices and determinants, Rank of matrices and Solution of the eqns."
+        },
+        {
+          "name": "Special types of matrices, Transpose, Adjoint and Inverse of matrices"
+        },
+        {
+          "name": "Types of matrices, Algebra of matrices"
+        }
+      ]
+    },
+    {
+      "name": "Measures of dispersion",
+      "subtopics": []
+    },
+    {
+      "name": "Pair of Straight Lines",
+      "subtopics": []
+    },
+    {
+      "name": "Permutations and Combinations",
+      "subtopics": [
+        {
+          "name": "Circular permutations"
+        },
+        {
+          "name": "Combination, Conditional combinations, Division into groups, Derangements"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Geometrical problems"
+        },
+        {
+          "name": "Multinomial theorem, No. of divisors"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Permutation, Conditional permutations and No. of permutations with or without repetition"
+        }
+      ]
+    },
+    {
+      "name": "Probability",
+      "subtopics": []
+    },
+    {
+      "name": "Quadratic Equations",
+      "subtopics": [
+        {
+          "name": "Common roots, Expressions and roots position"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Quadratic Inequalities and Miscellaneous equations"
+        },
+        {
+          "name": "Relation between roots and co-efficients"
+        },
+        {
+          "name": "Roots and Solution of quadratic equations"
+        }
+      ]
+    },
+    {
+      "name": "Sequences and Series",
+      "subtopics": [
+        {
+          "name": "A.P. - G.P., Method of difference"
+        },
+        {
+          "name": "Arithmetic progression"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Geometric progression"
+        },
+        {
+          "name": "Harmonic progression"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Relation between A.M., G.M. and H.M."
+        },
+        {
+          "name": "Sum upto n term of special series, Sn, Sn2, Sn3."
+        }
+      ]
+    },
+    {
+      "name": "Set Theory, Relations and Functions",
+      "subtopics": [
+        {
+          "name": "Competition level - 1"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Functions"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Relations"
+        },
+        {
+          "name": "Set theory"
+        }
+      ]
+    },
+    {
+      "name": "Straight Line",
+      "subtopics": []
+    },
+    {
+      "name": "Three Dimensions Geometry",
+      "subtopics": []
+    },
+    {
+      "name": "Trigonometrical Equ. & Inequ., Properties of Tri, Height & Distance",
+      "subtopics": []
+    },
+    {
+      "name": "Trigonometrical Ratios, Functions and Identities",
+      "subtopics": []
+    },
+    {
+      "name": "Vector Algebra",
+      "subtopics": []
+    }
+  ],
+  "Physics": [
+    {
+      "name": "Alternating Current",
+      "subtopics": [
+        {
+          "name": "Circuits"
+        },
+        {
+          "name": "Current, voltage and power"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Atoms and Nuclei",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Nucleus and Nuclear reaction"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Radioactivity"
+        },
+        {
+          "name": "Structure of atom"
+        }
+      ]
+    },
+    {
+      "name": "Communication System",
+      "subtopics": [
+        {
+          "name": "Communication"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Current Electricity",
+      "subtopics": [
+        {
+          "name": "Combination of resistances"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Kirchhoff's laws and their applications"
+        },
+        {
+          "name": "Measuring instruments"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Ohm's law and Electrical resistance"
+        }
+      ]
+    },
+    {
+      "name": "Dual Nature of Matter and Radiation",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Photon and Photo-electric effect"
+        },
+        {
+          "name": "de-Broglie waves"
+        }
+      ]
+    },
+    {
+      "name": "Elasticity",
+      "subtopics": [
+        {
+          "name": "Bulk modulus"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Modulus of rigidity"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Young's Modulus (Y) and Breaking of wire"
+        }
+      ]
+    },
+    {
+      "name": "Electromagnetic Induction",
+      "subtopics": [
+        {
+          "name": "Application of EMI"
+        },
+        {
+          "name": "Dynamic EMI"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Faraday's law and Lenz's law of EMI (Electromagnetic Induction)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Electromagnetic Waves",
+      "subtopics": [
+        {
+          "name": "EM Waves (Electromagnetic Waves)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        }
+      ]
+    },
+    {
+      "name": "Electronic Devices",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Semiconductor Diodes"
+        },
+        {
+          "name": "Semiconductors"
+        },
+        {
+          "name": "Solids and Crystal structure"
+        }
+      ]
+    },
+    {
+      "name": "Electrostatics",
+      "subtopics": [
+        {
+          "name": "Capacitance"
+        },
+        {
+          "name": "Combination of capacitors"
+        },
+        {
+          "name": "Conservation of charge and Coulombs law"
+        },
+        {
+          "name": "Electric dipole"
+        },
+        {
+          "name": "Electric field and Electric potential"
+        },
+        {
+          "name": "Electric flux and Gauss's law and its application"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Fluid Mechanics",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Flow of fluid"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Pascal's law with its application and Archmidies principle"
+        },
+        {
+          "name": "Pressure and density of liquid"
+        }
+      ]
+    },
+    {
+      "name": "Friction",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Kinetic or dynamic friction"
+        },
+        {
+          "name": "Motion on inclined plane"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Static friction and limiting friction"
+        }
+      ]
+    },
+    {
+      "name": "Gravitation",
+      "subtopics": [
+        {
+          "name": "Acceleration due to gravity"
+        },
+        {
+          "name": "Competition Level-II (ADVANCED)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Gravitational potential, Binding energy and Escape velocity of a satellite"
+        },
+        {
+          "name": "Keplers laws of planetary motion"
+        },
+        {
+          "name": "Motion of satellite"
+        },
+        {
+          "name": "Newtons law of gravitation"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Kinetic Theory of Gases",
+      "subtopics": [
+        {
+          "name": "Degree of freedom (f) and specific heat of gas (Cp and Cv)"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Gas law"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Magnetic Effect of Current",
+      "subtopics": [
+        {
+          "name": "Biot-savart's law and Ampere's law"
+        },
+        {
+          "name": "Charged particle in magnetic field"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Force on a current carrying conductor"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Magnetism",
+      "subtopics": [
+        {
+          "name": "Concept of magnetism and it's application"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Mechanics",
+      "subtopics": [
+        {
+          "name": "2D Motion"
+        },
+        {
+          "name": "Kinematics"
+        },
+        {
+          "name": "One Dimensional Motion"
+        }
+      ]
+    },
+    {
+      "name": "Motion in One Dimension",
+      "subtopics": [
+        {
+          "name": "Distance and displacement"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Non-uniform motion"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Uniform motion"
+        }
+      ]
+    },
+    {
+      "name": "Motion in Two Dimension",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Non-uniform circular motion"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Projectile motion - Horizontal"
+        },
+        {
+          "name": "Projectile motion - Oblique"
+        },
+        {
+          "name": "Uniform circular motion"
+        }
+      ]
+    },
+    {
+      "name": "Newton's Laws of Motion",
+      "subtopics": [
+        {
+          "name": "Concurrent forces"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Law of conservation of linear momentum and impulse"
+        },
+        {
+          "name": "Newton's first law of motion"
+        },
+        {
+          "name": "Newton's second law of motion"
+        },
+        {
+          "name": "Newton's third law of motion"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Ray Optics",
+      "subtopics": [
+        {
+          "name": "Curved surface mirror"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Plane surface mirror"
+        },
+        {
+          "name": "Refraction at spherial surface mirror"
+        },
+        {
+          "name": "Refraction of light at plane surfaces mirror"
+        },
+        {
+          "name": "Telescope and Microscope"
+        }
+      ]
+    },
+    {
+      "name": "Rotational Motion",
+      "subtopics": [
+        {
+          "name": "Angular displacement, Angular velocity and Angular acceleration"
+        },
+        {
+          "name": "Angular momentum"
+        },
+        {
+          "name": "Centre of mass for particle system"
+        },
+        {
+          "name": "Couple and Torque"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Moment of inertia"
+        },
+        {
+          "name": "Numeric Question Bank"
+        }
+      ]
+    },
+    {
+      "name": "Simple Harmonic Motion",
+      "subtopics": [
+        {
+          "name": "Displacement, velocity and acceleration in S.H.M. (Simple Harmonic Motion)"
+        },
+        {
+          "name": "Energy, time period and frequency in S.H.M."
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Resonance and superposition of S.H.M"
+        },
+        {
+          "name": "Simple Pendulum"
+        },
+        {
+          "name": "Spring Pendulum"
+        }
+      ]
+    },
+    {
+      "name": "Surface Tension",
+      "subtopics": [
+        {
+          "name": "Angle of contact"
+        },
+        {
+          "name": "Capillarity and capillary action"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Pressure difference"
+        },
+        {
+          "name": "Surface energy"
+        },
+        {
+          "name": "Surface tension"
+        }
+      ]
+    },
+    {
+      "name": "Thermodynamics",
+      "subtopics": [
+        {
+          "name": "Adiabatic process"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "First law of thermodynamics"
+        },
+        {
+          "name": "Isobaric and isochoric processes"
+        },
+        {
+          "name": "Isothermal process"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Second law of thermodynamics and heat engine refrigerator"
+        }
+      ]
+    },
+    {
+      "name": "Thermometry, Thermal Expansion and Calorimetry & Transmission of Heat",
+      "subtopics": [
+        {
+          "name": "Calorimetry"
+        },
+        {
+          "name": "Conduction"
+        },
+        {
+          "name": "Convection"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Thermal expansion"
+        },
+        {
+          "name": "Thermometry"
+        }
+      ]
+    },
+    {
+      "name": "Units, Dimensions and Errors in Measurement",
+      "subtopics": [
+        {
+          "name": "Dimensions"
+        },
+        {
+          "name": "Errors in measurement"
+        },
+        {
+          "name": "Expert level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Units"
+        }
+      ]
+    },
+    {
+      "name": "Vector",
+      "subtopics": [
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Relative velocity"
+        },
+        {
+          "name": "Vectors - Addition and subtraction"
+        },
+        {
+          "name": "Vectors - Fundamentals"
+        },
+        {
+          "name": "Vectors - Multiplication"
+        }
+      ]
+    },
+    {
+      "name": "Wave optics",
+      "subtopics": [
+        {
+          "name": "Diffraction"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Nature of waves and interference"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Polarization"
+        },
+        {
+          "name": "Young's double slit experiment"
+        }
+      ]
+    },
+    {
+      "name": "Waves and Sound",
+      "subtopics": [
+        {
+          "name": "Beats formation"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Interference of sound and Principle of Superposition"
+        },
+        {
+          "name": "Musical Sound"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Organ Pipe"
+        },
+        {
+          "name": "Simple harmonic progressive waves"
+        },
+        {
+          "name": "Stationary or standing Waves"
+        },
+        {
+          "name": "String's vibration"
+        }
+      ]
+    },
+    {
+      "name": "Work, Energy, Power and Collision",
+      "subtopics": [
+        {
+          "name": "Elastic collision and inelastic collision"
+        },
+        {
+          "name": "Expert Level (Higher Difficulty)"
+        },
+        {
+          "name": "Numeric Question Bank"
+        },
+        {
+          "name": "Perfect inelastic collision"
+        },
+        {
+          "name": "Power"
+        },
+        {
+          "name": "Workdone by a constant force"
+        },
+        {
+          "name": "Workdone by a variable force"
+        }
+      ]
+    }
+  ]
+}
