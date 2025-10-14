@@ -398,6 +398,7 @@ export default async function HomePage() {
                 </div>
             </section>
 
+
             <Footer
                 siteName={homeData.siteName}
                 footerDescription={homeData.footerDescription}
