@@ -129,7 +129,7 @@ export default function LoginPage() {
                 <div className="absolute inset-0 w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl animate-pulse opacity-30"></div>
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-white">KK Mishra Classes</h1>
+                <h1 className="text-3xl font-bold text-white">ABC Classes</h1>
                 <p className="text-blue-200 text-lg">Excellence in Education</p>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function LoginPage() {
                 <Trophy className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white">KK Mishra Classes</h1>
+                <h1 className="text-xl font-bold text-white">ABC Classes</h1>
                 <p className="text-blue-200 text-sm">Excellence in Education</p>
               </div>
             </div>

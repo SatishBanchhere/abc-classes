@@ -95,7 +95,7 @@ const TestPaperContent = () => {
 
         const headerHtml = `
             <header class="header-section">
-                <h1 class="institute-name">KK MISHRA CLASSES</h1>
+                <h1 class="institute-name">ABC CLASSES</h1>
                 <div class="test-title">${testData.title || "Test Paper"}</div>
                 <div class="test-info">
                     <div>
@@ -584,7 +584,7 @@ const TestPaperContent = () => {
                     </button>
                 </div>
                 <header className="header-section">
-                    <h1 className="institute-name">KK MISHRA CLASSES</h1>
+                    <h1 className="institute-name">ABC CLASSES</h1>
                     <div className="test-title" dangerouslySetInnerHTML={createMarkup(testData.title || "Test Paper")} />
                     <div className="test-info">
                         <div>

@@ -50,7 +50,7 @@ export default function MainNav({ studentData }: { studentData: studentDataType 
                 </div>
                 <div>
           <span className="text-xl bg-gradient-to-r from-[#1a73e8] to-[#4285f4] bg-clip-text text-transparent font-bold">
-            KK Mishra Classes
+            ABC Classes
           </span>
                     <div className="text-xs text-slate-500 font-medium">Student Portal</div>
                 </div>

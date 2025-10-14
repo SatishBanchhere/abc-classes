@@ -247,7 +247,7 @@ export default function StudentDashboard({ studentData }: { studentData: student
                 whiteSpace: "nowrap",
               }}
           >
-            KK MISHRA CLASSES
+            ABC CLASSES
           </div>
       )
     }

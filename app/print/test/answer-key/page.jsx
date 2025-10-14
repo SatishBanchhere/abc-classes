@@ -44,7 +44,7 @@ const AnswerKeyContent = () => {
     const generatePrintHtml = () => {
         const headerHtml = `
             <header class="header-section">
-                <h1 class="institute-name">KK MISHRA CLASSES</h1>
+                <h1 class="institute-name">ABC CLASSES</h1>
                 <div class="test-title">${testData.title || "Test Paper"} - ANSWER KEY</div>
                 <div class="test-info">
 <!--                    <div><strong>Subject:</strong> ${testData.subject || ""}</div>-->

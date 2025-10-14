@@ -279,7 +279,7 @@ export default function MediaPage() {
                                 id="seoTitle"
                                 value={mediaData.seoTitle}
                                 onChange={(e) => handlePageInfoChange("seoTitle", e.target.value)}
-                                placeholder="Media & Interviews - KK Mishra Classes"
+                                placeholder="Media & Interviews - ABC Classes"
                             />
                         </div>
                         <div>

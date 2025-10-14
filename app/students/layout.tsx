@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KK Mishra Classes - JEE Preparation Portal",
+  title: "ABC Classes - JEE Preparation Portal",
   description: "Comprehensive JEE preparation platform for aspiring students",
     generator: 'v0.dev'
 }

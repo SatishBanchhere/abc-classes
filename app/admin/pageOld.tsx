@@ -502,7 +502,7 @@ export default function AdminPanel() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20">
       <div className="container mx-auto p-6">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">KK Mishra Classes - Admin Panel</h1>
+          <h1 className="text-4xl font-bold text-slate-900 mb-2">ABC Classes - Admin Panel</h1>
           <p className="text-slate-600">Manage all website content from this central dashboard</p>
         </div>
 

@@ -157,7 +157,7 @@ export default function SiteSettingsPage() {
                     id="siteName"
                     value={homeData.siteName}
                     onChange={(e) => handleBasicChange("siteName", e.target.value)}
-                    placeholder="KK Mishra Classes"
+                    placeholder="ABC Classes"
                   />
                 </div>
                 <div>
@@ -195,7 +195,7 @@ export default function SiteSettingsPage() {
                   id="copyrightText"
                   value={homeData.copyrightText}
                   onChange={(e) => handleBasicChange("copyrightText", e.target.value)}
-                  placeholder="© 2025 KK Mishra Classes. All rights reserved."
+                  placeholder="© 2025 ABC Classes. All rights reserved."
                 />
               </div>
             </CardContent>
@@ -479,7 +479,7 @@ export default function SiteSettingsPage() {
                   id="seoTitle"
                   value={homeData.seoTitle}
                   onChange={(e) => handleBasicChange("seoTitle", e.target.value)}
-                  placeholder="KK Mishra Classes - Best JEE & NEET Coaching Institute"
+                  placeholder="ABC Classes - Best JEE & NEET Coaching Institute"
                 />
                 <p className="text-sm text-muted-foreground mt-1">Recommended length: 50-60 characters</p>
               </div>

@@ -186,7 +186,7 @@ export default async function HomePage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-gray-900 to-blue-800 bg-clip-text text-transparent px-2">
-                            Why Choose KK Mishra Classes?
+                            Why Choose ABC Classes?
                         </h2>
                         <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-2">
                             Experience excellence in education with our comprehensive approach to JEE, NEET & MHTCET preparation

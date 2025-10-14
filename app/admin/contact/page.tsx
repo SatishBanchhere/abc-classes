@@ -289,7 +289,7 @@ export default function ContactPage() {
                       id="seoTitle"
                       value={contactData.seoTitle}
                       onChange={(e) => handleBasicInfoChange("seoTitle", e.target.value)}
-                      placeholder="Contact KK Mishra Classes - Best JEE NEET Coaching"
+                      placeholder="Contact ABC Classes - Best JEE NEET Coaching"
                   />
                 </div>
                 <div>
@@ -298,7 +298,7 @@ export default function ContactPage() {
                       id="seoDescription"
                       value={contactData.seoDescription}
                       onChange={(e) => handleBasicInfoChange("seoDescription", e.target.value)}
-                      placeholder="Contact KK Mishra Classes for JEE and NEET coaching inquiries..."
+                      placeholder="Contact ABC Classes for JEE and NEET coaching inquiries..."
                       rows={3}
                   />
                 </div>

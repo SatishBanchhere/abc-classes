@@ -79,7 +79,7 @@ export default function TeacherDashboard() {
                         whiteSpace: "nowrap",
                     }}
                 >
-                    KK MISHRA TEACHER
+                    ABC TEACHER
                 </div>,
             )
         }
@@ -190,7 +190,7 @@ export default function TeacherDashboard() {
                         <Trophy className="h-6 w-6" />
                     </div>
                     <span className="text-lg bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
-            KK Mishra Classes - Teacher Portal
+            ABC Classes - Teacher Portal
           </span>
                 </Link>
 

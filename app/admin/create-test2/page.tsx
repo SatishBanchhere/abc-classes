@@ -448,7 +448,7 @@ export default function CreateTestPage() {
             // Header
             pdf.setFontSize(20);
             pdf.setFont('helvetica', 'bold');
-            pdf.text('KK MISHRA CLASSES', pageWidth / 2, yPosition, {align: 'center'});
+            pdf.text('ABC CLASSES', pageWidth / 2, yPosition, {align: 'center'});
 
             yPosition += 15;
             pdf.setFontSize(16);
@@ -577,7 +577,7 @@ export default function CreateTestPage() {
             // Header
             pdf.setFontSize(20);
             pdf.setFont('helvetica', 'bold');
-            pdf.text('KK MISHRA CLASSES', pageWidth / 2, yPosition, {align: 'center'});
+            pdf.text('ABC CLASSES', pageWidth / 2, yPosition, {align: 'center'});
 
             yPosition += 15;
             pdf.setFontSize(16);
@@ -666,7 +666,7 @@ export default function CreateTestPage() {
             // Header
             pdf.setFontSize(20);
             pdf.setFont('helvetica', 'bold');
-            pdf.text('KK MISHRA CLASSES', pageWidth / 2, yPosition, {align: 'center'});
+            pdf.text('ABC CLASSES', pageWidth / 2, yPosition, {align: 'center'});
 
             yPosition += 15;
             pdf.setFontSize(16);
@@ -779,7 +779,7 @@ export default function CreateTestPage() {
             const headerHTML = `
             <div style="text-align: center; margin-bottom: 30px; border-bottom: 3px solid #059669; padding-bottom: 20px;">
                 <h1 style="font-size: 28px; font-weight: bold; color: #047857; margin: 0; text-transform: uppercase; letter-spacing: 1px;">
-                    KK MISHRA CLASSES
+                    ABC CLASSES
                 </h1>
                 <div style="margin-top: 15px; font-size: 20px; font-weight: 600; color: #374151;">
                     ${testConfig.title || "Test Paper"} - SOLUTIONS
@@ -908,7 +908,7 @@ export default function CreateTestPage() {
             const headerHTML = `
             <div style="text-align: center; margin-bottom: 30px; border-bottom: 3px solid #7c3aed; padding-bottom: 20px;">
                 <h1 style="font-size: 28px; font-weight: bold; color: #6d28d9; margin: 0; text-transform: uppercase; letter-spacing: 1px;">
-                    KK MISHRA CLASSES
+                    ABC CLASSES
                 </h1>
                 <div style="margin-top: 15px; font-size: 20px; font-weight: 600; color: #374151;">
                     ${testConfig.title || "Test Paper"} - ANSWER KEY

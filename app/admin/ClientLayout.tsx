@@ -187,7 +187,7 @@ export default function AdminRootLayout({homeData, children} : {homeData:HomePag
                             </div>
                             <div>
                                 <h1 className="text-3xl font-bold text-white">Admin Panel</h1>
-                                <p className="text-blue-200 text-lg">KK Mishra Classes</p>
+                                <p className="text-blue-200 text-lg">ABC Classes</p>
                             </div>
                         </div>
 
@@ -306,7 +306,7 @@ export default function AdminRootLayout({homeData, children} : {homeData:HomePag
                             </div>
                             <div>
                                 <h1 className="text-xl font-bold text-white">Admin Panel</h1>
-                                <p className="text-blue-200 text-sm">KK Mishra Classes</p>
+                                <p className="text-blue-200 text-sm">ABC Classes</p>
                             </div>
                         </div>
 

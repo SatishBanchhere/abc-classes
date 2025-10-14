@@ -86,7 +86,7 @@ const AdminSidebar: React.FC<AdminSidebarProps> = ({ isOpen, onClose, onLogout }
                             </div>
                             <div>
                                 <h1 className="text-lg font-bold text-gray-900">Admin Panel</h1>
-                                <p className="text-sm text-gray-500">KK Mishra Classes</p>
+                                <p className="text-sm text-gray-500">ABC Classes</p>
                             </div>
                         </div>
                     </div>

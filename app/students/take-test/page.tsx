@@ -120,7 +120,7 @@ export default function TakeTestPage() {
                         whiteSpace: "nowrap",
                     }}
                 >
-                    KK MISHRA CLASSES
+                    ABC CLASSES
                 </div>,
             )
         }
