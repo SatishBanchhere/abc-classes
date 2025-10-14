@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KK Mishra Classes - Leading JEE & NEET Coaching Institute",
+  title: "ABC Classes - Leading JEE & NEET Coaching Institute",
   description:
     "Join thousands of successful students who cracked JEE Main & Advanced with our expert guidance, comprehensive study material, and cutting-edge online testing platform.",
 }
