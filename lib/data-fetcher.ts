@@ -479,13 +479,100 @@ const defaultMediaPageData: MediaPageData = {
       date: "2024-01-15",
       featured: true
     },
+    {
+      url: "https://www.youtube.com/watch?v=example2",
+      title: "Student Success Story - From Struggle to IIT",
+      description: "Rajesh shares his transformation journey from failing mock tests to cracking JEE Advanced.",
+      category: "testimonial",
+      date: "2024-03-20",
+      featured: true
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example3",
+      title: "NEET Topper Shares Study Strategy",
+      description: "Priya discusses her daily routine, time management, and how ABC Classes guided her NEET preparation.",
+      category: "testimonial",
+      date: "2024-06-10",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example4",
+      title: "Faculty Spotlight - Chemistry Made Simple",
+      description: "Our chemistry expert demonstrates innovative teaching methods for organic chemistry concepts.",
+      category: "educational",
+      date: "2024-02-28",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example5",
+      title: "Parent-Teacher Conference Highlights",
+      description: "Parents share their experience with our personalized mentoring approach and student progress tracking.",
+      category: "testimonial",
+      date: "2024-04-15",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example6",
+      title: "Mock Test Analysis Session",
+      description: "Live demonstration of our analytics platform showing how students identify and improve weak areas.",
+      category: "educational",
+      date: "2024-05-05",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example7",
+      title: "Local News Feature - Education Excellence",
+      description: "ABC Classes featured on regional news for outstanding JEE and NEET results in Maharashtra.",
+      category: "media",
+      date: "2024-07-22",
+      featured: true
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example8",
+      title: "Physics Problem Solving Masterclass",
+      description: "Step-by-step approach to tackle complex JEE physics problems with real exam examples.",
+      category: "educational",
+      date: "2024-03-12",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example9",
+      title: "Alumni Reunion - Where Are They Now?",
+      description: "Former students now in IIT, AIIMS, and top engineering colleges share their career journeys.",
+      category: "testimonial",
+      date: "2024-08-30",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example10",
+      title: "Study Tips for Competitive Exams",
+      description: "Expert advice on time management, revision strategies, and maintaining mental health during preparation.",
+      category: "educational",
+      date: "2024-01-08",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example11",
+      title: "Behind the Scenes - Test Series Creation",
+      description: "How our faculty creates exam-like questions and maintains question bank quality standards.",
+      category: "educational",
+      date: "2024-04-03",
+      featured: false
+    },
+    {
+      url: "https://www.youtube.com/watch?v=example12",
+      title: "Motivational Talk - Overcoming Exam Anxiety",
+      description: "Counseling session helping students manage stress and build confidence for competitive exams.",
+      category: "motivational",
+      date: "2024-05-18",
+      featured: false
+    }
   ],
 
   seoTitle: "Media & Interviews - ABC Classes",
   seoDescription: "Explore interviews, student testimonials, and media features from ABC Classes.",
   seoKeywords: "ABC Classes interviews, student testimonials, JEE stories, NEET coaching media"
 }
-
 
 // Default data with comprehensive fallbacks
 const defaultHomePageData: HomePageData = {
