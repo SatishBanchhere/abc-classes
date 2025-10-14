@@ -697,6 +697,7 @@ const defaultHomePageData: HomePageData = {
   copyrightText: "© 2025 ABC Classes. All rights reserved.",
 }
 
+
 // Similar comprehensive defaults for other interfaces...
 const defaultContactPageData: ContactPageData = {
   pageTitle: "Contact Us",
