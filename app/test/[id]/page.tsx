@@ -85,81 +85,52 @@ const TestPage: React.FC = () => {
 
 
     useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
-        setUser(currentUser)
-        if (currentUser) {
-            setUserId(currentUser.uid)
-            try {
-                // Check student data
-                const studentDocRef = doc(db, "students", currentUser.uid)
-                const studentDoc = await getDoc(studentDocRef)
-                console.log(currentUser.uid)
-                
-                if (studentDoc.exists()) {
-                    const studentData = studentDoc.data()
-                    console.log({studentData})
-                    setStudentName(studentData.name)
-                    setIsVerified(studentData.isVerified || false)
-                } else {
-                    setIsVerified(false)
-                }
-
-                // Check if user has already submitted this test
-                const userTestHistoryRef = doc(db, "students", currentUser.uid, "testHistory", testId)
-                const userTestHistoryDoc = await getDoc(userTestHistoryRef)
-                
-                if (userTestHistoryDoc.exists()) {
-                    console.log("User has already submitted this test")
-                    setHasAlreadySubmitted(true)
-                } else {
-                    console.log("User has not submitted this test yet")
-                    setHasAlreadySubmitted(false)
-                }
-                
-            } catch (error) {
-                console.error("Error fetching user data:", error)
-                setIsVerified(false)
-                setHasAlreadySubmitted(false)
-            }
-        } else {
-            setIsVerified(null)
-            setHasAlreadySubmitted(null)
-        }
-        setLoading(false)
-    })
-
-    return () => unsubscribe()
-}, [testId]) // Add testId as dependency
-
-    useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
             setUser(currentUser)
             if (currentUser) {
                 setUserId(currentUser.uid)
                 try {
+                    setLoading(true);
+                    // Check student data
                     const studentDocRef = doc(db, "students", currentUser.uid)
                     const studentDoc = await getDoc(studentDocRef)
                     console.log(currentUser.uid)
+                    
                     if (studentDoc.exists()) {
                         const studentData = studentDoc.data()
                         console.log({studentData})
-                        setStudentName(studentData.name);
+                        setStudentName(studentData.name)
                         setIsVerified(studentData.isVerified || false)
                     } else {
                         setIsVerified(false)
                     }
+
+                    // Check if user has already submitted this test
+                    const userTestHistoryRef = doc(db, "students", currentUser.uid, "testHistory", testId)
+                    const userTestHistoryDoc = await getDoc(userTestHistoryRef)
+                    
+                    if (userTestHistoryDoc.exists()) {
+                        console.log("User has already submitted this test")
+                        setHasAlreadySubmitted(true)
+                    } else {
+                        console.log("User has not submitted this test yet")
+                        setHasAlreadySubmitted(false)
+                    }
+                    setLoading(false);
                 } catch (error) {
-                    console.error("Error fetching student data:", error)
+                    console.error("Error fetching user data:", error)
                     setIsVerified(false)
+                    setHasAlreadySubmitted(false)
                 }
             } else {
                 setIsVerified(null)
+                setHasAlreadySubmitted(null)
             }
             setLoading(false)
         })
 
         return () => unsubscribe()
-    }, [])
+    }, [testId])
 
     // Initialize test data when component mounts
     useEffect(() => {
@@ -632,6 +603,38 @@ const TestPage: React.FC = () => {
         }
     }, [])
 
+    // Enhanced loading state
+    if (loading) {
+        return (
+            <div
+                className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center relative p-4">
+                {/* {renderWatermarks()} */}
+                <div
+                    className="text-center relative z-10 bg-white/80 backdrop-blur-lg p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-2xl">
+                    <div className="relative mb-6 sm:mb-8">
+                        <div
+                            className="w-16 sm:w-20 h-16 sm:h-20 mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center shadow-xl">
+                            <BookOpen className="w-8 sm:w-10 h-8 sm:h-10 text-white animate-pulse"/>
+                        </div>
+                        <div
+                            className="absolute inset-0 w-16 sm:w-20 h-16 sm:h-20 mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl animate-ping opacity-20"></div>
+                    </div>
+                    <h1 className="text-xl sm:text-2xl font-bold mb-4 text-slate-800">
+                        Loading Examination Environment
+                    </h1>
+                    <p className="text-slate-600 mb-6">Please wait while we prepare your test interface...</p>
+                    <div className="flex items-center justify-center space-x-2">
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"
+                             style={{animationDelay: '0.1s'}}></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"
+                             style={{animationDelay: '0.2s'}}></div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     // Add this check after the loading state but before the verification check
     if (hasAlreadySubmitted === true) {
         return (
@@ -676,6 +679,190 @@ const TestPage: React.FC = () => {
         )
     }
 
+    // Enhanced instructions screen with fullscreen and timer details
+    if (showInstructions) {
+        return (
+            <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 relative">
+                {/* {renderWatermarks()} */}
+
+                {/* Professional exam header */}
+                <header className="bg-white border-b-2 border-blue-600 text-slate-800 px-2 sm:p-4 shadow-lg relative z-10">
+                    <div className="flex flex-col gap-2 md:flex-row justify-between items-center max-w-7xl mx-auto">
+                        <div className="flex items-center space-x-3 sm:space-x-4">
+                            <div className="p-2 sm:p-3 bg-blue-600 rounded-xl shadow-lg">
+                                <BookOpen className="h-6 w-6 sm:h-7 sm:w-7 text-white"/>
+                            </div>
+                            <div>
+                                <h1 className="font-bold text-lg sm:text-xl text-blue-600">
+                                    {testData.testConfig.paperName}
+                                </h1>
+                                <p className="text-xs sm:text-sm text-slate-600">Computer Based Examination</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-row flex-wrap gap-4 sm:gap-8 items-center mt-2 md:mt-0">
+                            <div className="text-right">
+                                <div className="text-xs text-slate-600">Candidate</div>
+                                <div className="font-semibold flex items-center">
+                                    <UserIcon className="w-4 h-4 mr-2"/>
+                                    {studentName}
+                                </div>
+                            </div>
+                            <div className="text-right">
+                                <div className="text-xs text-slate-600">Duration</div>
+                                <div className="text-base sm:text-lg font-bold text-emerald-600 flex items-center">
+                                    <Timer className="h-4 w-4 sm:h-5 sm:w-5 mr-2"/>
+                                    {formatTime(timeLeft)}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div
+                    className="max-w-6xl mx-auto my-6 sm:my-12 p-4 sm:p-8 bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl relative z-10 border border-slate-200">
+                    <div className="text-center mb-6 sm:mb-10">
+                        <div
+                            className="w-16 sm:w-20 h-16 sm:h-20 mx-auto bg-gradient-to-r from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg">
+                            <BookOpen className="h-8 sm:h-10 w-8 sm:w-10 text-blue-600"/>
+                        </div>
+                        <h1 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">
+                            Examination Instructions
+                        </h1>
+                        <p className="text-slate-600 text-base sm:text-lg">Please read all instructions carefully before starting
+                            your test</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 mb-6 sm:mb-10">
+                        {/* Test Configuration */}
+                        <div
+                            className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-4 sm:p-6 shadow-sm">
+                            <div className="flex items-center mb-4">
+                                <Calculator className="w-5 sm:w-6 h-5 sm:h-6 text-blue-600 mr-3"/>
+                                <h3 className="font-bold text-slate-800">Test Configuration</h3>
+                            </div>
+                            <div className="space-y-3 text-sm">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-slate-700">Duration:</span>
+                                    <span
+                                        className="font-semibold text-slate-800">{testData.testConfig.totalTime} minutes</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-slate-700">Total Questions:</span>
+                                    <span className="font-semibold text-slate-800">{testData.questions.length}</span>
+                                </div>
+                                <div className="border-t border-blue-200 pt-3 space-y-2">
+                                    <div className="flex justify-between">
+                                        <span className="text-slate-700">Physics:</span>
+                                        <span className="font-semibold">{testData.testConfig.subjectWise.physics}</span>
+                                    </div>
+                                    {testData.testConfig.subjectWise.chemistry !== 0 && (<div className="flex justify-between">
+                                        <span className="text-slate-700">Chemistry:</span>
+                                        <span
+                                            className="font-semibold">{testData.testConfig.subjectWise.chemistry}</span>
+                                    </div>)}
+                                    {testData.testConfig.subjectWise.mathematics !== 0 && (<div className="flex justify-between">
+                                        <span className="text-slate-700">Mathematics:</span>
+                                        <span
+                                            className="font-semibold">{testData.testConfig.subjectWise.mathematics}</span>
+                                    </div>)}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Marking Scheme */}
+                        <div
+                            className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-2xl p-4 sm:p-6 shadow-sm">
+                            <div className="flex items-center mb-4">
+                                <CheckCircle className="w-5 sm:w-6 h-5 sm:h-6 text-emerald-600 mr-3"/>
+                                <h3 className="font-bold text-slate-800">Marking Scheme</h3>
+                            </div>
+                            <div className="space-y-4 text-sm">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-slate-700">Correct Answer:</span>
+                                    <span
+                                        className="font-semibold text-emerald-600">+{testData.testConfig.correctMarks}</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-slate-700">Incorrect Answer:</span>
+                                    <span
+                                        className="font-semibold text-rose-600">{testData.testConfig.wrongMarks}</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-slate-700">Unanswered:</span>
+                                    <span className="font-semibold text-slate-600">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Guidelines */}
+                        <div
+                            className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 sm:p-6 shadow-sm">
+                            <div className="flex items-center mb-4">
+                                <AlertTriangle className="w-5 sm:w-6 h-5 sm:h-6 text-amber-600 mr-3"/>
+                                <h3 className="font-bold text-slate-800">Important Guidelines</h3>
+                            </div>
+                            <ul className="text-sm text-slate-700 space-y-2">
+                                <li className="flex items-start">
+                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                    Timer starts after agreement
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                    Navigate using question palette
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                    Mark questions for review
+                                </li>
+                                <li className="flex items-start">
+                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                    Auto-submit on time expiry
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Enhanced fullscreen notice */}
+                    <div
+                        className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-2xl shadow-sm">
+                        <div className="flex items-center mb-4">
+                            <Shield className="w-5 sm:w-6 h-5 sm:h-6 text-purple-600 mr-3"/>
+                            <h3 className="font-bold text-slate-800">Fullscreen Mode & Security</h3>
+                        </div>
+                        <ul className="text-sm text-slate-700 space-y-2">
+                            <li className="flex items-start">
+                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                Test will automatically enter fullscreen mode for security
+                            </li>
+                            <li className="flex items-start">
+                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                Exiting fullscreen will trigger security warnings
+                            </li>
+                            <li className="flex items-start">
+                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                Multiple fullscreen breaches may be flagged
+                            </li>
+                            <li className="flex items-start">
+                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
+                                Avoid switching tabs or applications during test
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="flex justify-center">
+                        <Button
+                            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl shadow-lg font-semibold text-base sm:text-lg"
+                            onClick={handleAgreeToInstructions}
+                        >
+                            <CheckCircle2 className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6"/>
+                            I Agree - Start Examination
+                            {/* I Agree - Start Fullscreen Examination */}
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     // Fullscreen Warning Modal
     if (showFullscreenWarning) {
@@ -927,8 +1114,6 @@ const TestPage: React.FC = () => {
         )
     }
 
-
-
     // Enhanced error state
     if (error) {
         return (
@@ -1066,190 +1251,6 @@ const TestPage: React.FC = () => {
         )
     }
 
-    // Enhanced instructions screen with fullscreen and timer details
-    if (showInstructions) {
-        return (
-            <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 relative">
-                {/* {renderWatermarks()} */}
-
-                {/* Professional exam header */}
-                <header className="bg-white border-b-2 border-blue-600 text-slate-800 px-2 sm:p-4 shadow-lg relative z-10">
-                    <div className="flex flex-col gap-2 md:flex-row justify-between items-center max-w-7xl mx-auto">
-                        <div className="flex items-center space-x-3 sm:space-x-4">
-                            <div className="p-2 sm:p-3 bg-blue-600 rounded-xl shadow-lg">
-                                <BookOpen className="h-6 w-6 sm:h-7 sm:w-7 text-white"/>
-                            </div>
-                            <div>
-                                <h1 className="font-bold text-lg sm:text-xl text-blue-600">
-                                    {testData.testConfig.paperName}
-                                </h1>
-                                <p className="text-xs sm:text-sm text-slate-600">Computer Based Examination</p>
-                            </div>
-                        </div>
-                        <div className="flex flex-row flex-wrap gap-4 sm:gap-8 items-center mt-2 md:mt-0">
-                            <div className="text-right">
-                                <div className="text-xs text-slate-600">Candidate</div>
-                                <div className="font-semibold flex items-center">
-                                    <UserIcon className="w-4 h-4 mr-2"/>
-                                    {studentName}
-                                </div>
-                            </div>
-                            <div className="text-right">
-                                <div className="text-xs text-slate-600">Duration</div>
-                                <div className="text-base sm:text-lg font-bold text-emerald-600 flex items-center">
-                                    <Timer className="h-4 w-4 sm:h-5 sm:w-5 mr-2"/>
-                                    {formatTime(timeLeft)}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <div
-                    className="max-w-6xl mx-auto my-6 sm:my-12 p-4 sm:p-8 bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl relative z-10 border border-slate-200">
-                    <div className="text-center mb-6 sm:mb-10">
-                        <div
-                            className="w-16 sm:w-20 h-16 sm:h-20 mx-auto bg-gradient-to-r from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg">
-                            <BookOpen className="h-8 sm:h-10 w-8 sm:w-10 text-blue-600"/>
-                        </div>
-                        <h1 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-3">
-                            Examination Instructions
-                        </h1>
-                        <p className="text-slate-600 text-base sm:text-lg">Please read all instructions carefully before starting
-                            your test</p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 mb-6 sm:mb-10">
-                        {/* Test Configuration */}
-                        <div
-                            className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-4 sm:p-6 shadow-sm">
-                            <div className="flex items-center mb-4">
-                                <Calculator className="w-5 sm:w-6 h-5 sm:h-6 text-blue-600 mr-3"/>
-                                <h3 className="font-bold text-slate-800">Test Configuration</h3>
-                            </div>
-                            <div className="space-y-3 text-sm">
-                                <div className="flex justify-between items-center">
-                                    <span className="text-slate-700">Duration:</span>
-                                    <span
-                                        className="font-semibold text-slate-800">{testData.testConfig.totalTime} minutes</span>
-                                </div>
-                                <div className="flex justify-between items-center">
-                                    <span className="text-slate-700">Total Questions:</span>
-                                    <span className="font-semibold text-slate-800">{testData.questions.length}</span>
-                                </div>
-                                <div className="border-t border-blue-200 pt-3 space-y-2">
-                                    <div className="flex justify-between">
-                                        <span className="text-slate-700">Physics:</span>
-                                        <span className="font-semibold">{testData.testConfig.subjectWise.physics}</span>
-                                    </div>
-                                    {testData.testConfig.subjectWise.chemistry !== 0 && (<div className="flex justify-between">
-                                        <span className="text-slate-700">Chemistry:</span>
-                                        <span
-                                            className="font-semibold">{testData.testConfig.subjectWise.chemistry}</span>
-                                    </div>)}
-                                    {testData.testConfig.subjectWise.mathematics !== 0 && (<div className="flex justify-between">
-                                        <span className="text-slate-700">Mathematics:</span>
-                                        <span
-                                            className="font-semibold">{testData.testConfig.subjectWise.mathematics}</span>
-                                    </div>)}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Marking Scheme */}
-                        <div
-                            className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-2xl p-4 sm:p-6 shadow-sm">
-                            <div className="flex items-center mb-4">
-                                <CheckCircle className="w-5 sm:w-6 h-5 sm:h-6 text-emerald-600 mr-3"/>
-                                <h3 className="font-bold text-slate-800">Marking Scheme</h3>
-                            </div>
-                            <div className="space-y-4 text-sm">
-                                <div className="flex justify-between items-center">
-                                    <span className="text-slate-700">Correct Answer:</span>
-                                    <span
-                                        className="font-semibold text-emerald-600">+{testData.testConfig.correctMarks}</span>
-                                </div>
-                                <div className="flex justify-between items-center">
-                                    <span className="text-slate-700">Incorrect Answer:</span>
-                                    <span
-                                        className="font-semibold text-rose-600">{testData.testConfig.wrongMarks}</span>
-                                </div>
-                                <div className="flex justify-between items-center">
-                                    <span className="text-slate-700">Unanswered:</span>
-                                    <span className="font-semibold text-slate-600">0</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Guidelines */}
-                        <div
-                            className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 sm:p-6 shadow-sm">
-                            <div className="flex items-center mb-4">
-                                <AlertTriangle className="w-5 sm:w-6 h-5 sm:h-6 text-amber-600 mr-3"/>
-                                <h3 className="font-bold text-slate-800">Important Guidelines</h3>
-                            </div>
-                            <ul className="text-sm text-slate-700 space-y-2">
-                                <li className="flex items-start">
-                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                    Timer starts after agreement
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                    Navigate using question palette
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                    Mark questions for review
-                                </li>
-                                <li className="flex items-start">
-                                    <CheckCircle className="w-4 h-4 text-amber-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                    Auto-submit on time expiry
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Enhanced fullscreen notice */}
-                    <div
-                        className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-2xl shadow-sm">
-                        <div className="flex items-center mb-4">
-                            <Shield className="w-5 sm:w-6 h-5 sm:h-6 text-purple-600 mr-3"/>
-                            <h3 className="font-bold text-slate-800">Fullscreen Mode & Security</h3>
-                        </div>
-                        <ul className="text-sm text-slate-700 space-y-2">
-                            <li className="flex items-start">
-                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                Test will automatically enter fullscreen mode for security
-                            </li>
-                            <li className="flex items-start">
-                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                Exiting fullscreen will trigger security warnings
-                            </li>
-                            <li className="flex items-start">
-                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                Multiple fullscreen breaches may be flagged
-                            </li>
-                            <li className="flex items-start">
-                                <AlertTriangle className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0"/>
-                                Avoid switching tabs or applications during test
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="flex justify-center">
-                        <Button
-                            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl shadow-lg font-semibold text-base sm:text-lg"
-                            onClick={handleAgreeToInstructions}
-                        >
-                            <CheckCircle2 className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6"/>
-                            I Agree - Start Examination
-                            {/* I Agree - Start Fullscreen Examination */}
-                        </Button>
-                    </div>
-                </div>
-            </div>
-        )
-    }
 
     const currentQuestion = getCurrentQuestion()
     if (!currentQuestion) return null
