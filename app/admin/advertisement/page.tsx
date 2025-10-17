@@ -52,8 +52,9 @@ export default function AdvertisementPage() {
     }
   }
 
-  const handleAdvertisementChange = (field: string, value: string | boolean) => {
+  const handleAdvertisementChange = async (field: string, value: string | boolean) => {
     if (!homeData) return
+    await fetch("/api/reavalidateit?path=/")
 
     setHomeData({
       ...homeData,
