@@ -282,7 +282,10 @@ export default function GalleryAdmin() {
                                     <Button
                                         size="sm"
                                         variant="secondary"
-                                        onClick={() => window.open(image.url, '_blank')}
+                                        onClick={() => {
+                                            console.log(image.url)
+                                            window.open(image.url, '_blank')
+                                        }}
                                     >
                                         <Eye className="w-4 h-4" />
                                     </Button>
