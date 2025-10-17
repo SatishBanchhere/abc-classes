@@ -69,7 +69,7 @@ export default function AdvertisementPage() {
 
     setSaving(true)
     try {
-      await fetch("https://abc-classes.vercel.app/api/reavalidateit?path=/")
+      await fetch("https://abc-classes.vercel.app/api/revalidateit?path=/")
       await updateHomePageData({ advertisement: homeData.advertisement })
       toast({
         title: "Success",
