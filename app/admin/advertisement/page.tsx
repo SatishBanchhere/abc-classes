@@ -54,7 +54,7 @@ export default function AdvertisementPage() {
 
   const handleAdvertisementChange = async (field: string, value: string | boolean) => {
     if (!homeData) return
-    await fetch("/api/reavalidateit?path=/")
+    await fetch("https://abc-classes.vercel.app/api/reavalidateit?path=/")
 
     setHomeData({
       ...homeData,
