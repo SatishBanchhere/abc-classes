@@ -68,6 +68,7 @@ export default function GalleryAdmin() {
         setSaving(true)
         try {
             await updateHomePageData({ galleryImages: images })
+            await fetch("/api/revalidateit?path=/")
             toast.success('Gallery updated successfully!')
         } catch (error) {
             console.error('Error saving gallery:', error)
@@ -86,6 +87,7 @@ export default function GalleryAdmin() {
         setImages([...images, { ...newImage }])
         setNewImage({ url: '', alt: '', caption: '' })
         setShowAddDialog(false)
+        handleSaveChanges();
         toast.success('Image added successfully!')
     }
 
