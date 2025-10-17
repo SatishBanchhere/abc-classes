@@ -119,9 +119,9 @@ export default function StudentsPage({studentsData}: {studentsData: Student[]}) 
     const filteredStudents = students
         .filter(
             (student) =>
-                student.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                student.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                student.exam_type.toLowerCase().includes(searchTerm.toLowerCase()),
+                student.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                student.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                student.exam_type?.toLowerCase().includes(searchTerm.toLowerCase()),
         )
         .sort((a, b) => {
             // Unverified students first, then by name
