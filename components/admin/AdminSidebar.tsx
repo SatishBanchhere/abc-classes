@@ -18,7 +18,8 @@ import {
     Layout,
     Globe,
     Megaphone,
-    FilePlus, PencilLine, Video
+    FilePlus, PencilLine, Video,
+    BrainCircuit
 } from 'lucide-react';
 
 interface AdminSidebarProps {
@@ -28,7 +29,6 @@ interface AdminSidebarProps {
 }
 
 const AdminSidebar: React.FC<AdminSidebarProps> = ({ isOpen, onClose, onLogout }) => {
-    const router = useRouter();
     const pathname = usePathname();
 
     const menuItems = [
@@ -52,6 +52,7 @@ const AdminSidebar: React.FC<AdminSidebarProps> = ({ isOpen, onClose, onLogout }
         { href: '/admin/advertisement', icon: Megaphone, label: 'Advertisement' },
         { href: '/admin/stats', icon: Award, label: 'Statistics' },
         { href: '/admin/site-settings', icon: Settings, label: 'Site Settings' },
+        { href: '/admin/cognitive-ai', icon: BrainCircuit, label: 'Cognitive AI' },
     ];
 
     const handleLogout = () => {
